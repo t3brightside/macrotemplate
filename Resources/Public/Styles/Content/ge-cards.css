@@ -1,0 +1,25 @@
+.ge-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.ge-cards .frame {
+  width: 32%;
+  clear: none;
+  margin-bottom: 1.5%;
+}
+
+.ge-cards .frame :last-child {
+  margin-bottom: 0;
+}
+
+
+
+.ge-cards.small .frame {
+  width: 49%;
+}
+
+.ge-cards.tiny .frame {
+  width: 100%;
+}

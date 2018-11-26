@@ -1,0 +1,13 @@
+<div id="content-header" style="background-image: url('{headerImage}'); background-position: {headerImagePosition};">
+  <div class="contentWidth">
+    <f:if condition="{header}">
+      <f:then><f:format.raw>{header}</f:format.raw></f:then>
+      <f:else>
+        <f:if condition="{data.doktype} == 136"><h1>News</h1></f:if>
+        <f:if condition="{data.doktype} == 137"><h1>Event</h1></f:if>
+        <f:if condition="{data.doktype} == 138"><h1>Product</h1></f:if>
+        <f:if condition="{data.doktype} == 1"><h1>{data.title}</h1></f:if>
+      </f:else>
+    </f:if>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+# customsubcategory=macrotemplatexcc=Macrotemplate Cookie Consent
+# cat=Macrotemplate/macrotemplatexcc; type=string; label= Cookie message
+	macrotemplate.ccmessage = This website uses cookies to simplify the provision of services. By accepting you accept to activate Google Analytics.
+# cat=Macrotemplate/macrotemplatexcc; type=string; label= Read more link text
+	macrotemplate.ccmore = Privacy, cookies & settings
+# cat=Macrotemplate/macrotemplatexcc; type=string; label= Allow cookies button text
+	macrotemplate.ccallow = Accept
+# cat=Macrotemplate/macrotemplatexcc; type=string; label= Dismiss button text
+	macrotemplate.ccdismiss = ✕
+# cat=Macrotemplate/macrotemplatexcc; type=string; label= URL to read more page
+	macrotemplate.cchref = /privacy-settings/
+
+	macrotemplate.ccactive = 1
+#[globalVar = GP:L = 1]
+#	macrotemplate.ccmessage = Cookies erleichtern die Bereitstellung unserer Dienste. Mit der Nutzung unserer Dienste erklären Sie sich damit einverstanden, dass wir Cookies verwenden.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#	macrotemplate.ccmore = Mehr&nbsp;Infos
+#	macrotemplate.ccdismiss = Ich akzeptiere
+#	macrotemplate.cchref = /de/privacy-settings
+#[global]

@@ -1,0 +1,31 @@
+{
+  "name": "t3brightside/macrotemplate",
+  "description": "TYPO3 CMS template – Brightside's kickstart template package.",
+  "type": "typo3-cms-extension",
+  "version": "0.1.0",
+  "keywords": ["TYPO3 CMS", "Template", "Design", "Fluid", "Corporate"],
+  "homepage": "https://macrotemplate.t3brightside.com/",
+  "license": "GPL-2.0+",
+  "authors": [
+      {
+          "name": "Tanel Põld",
+          "role": "Developer",
+          "email": "info@t3brightside.com",
+          "homepage": "https://t3brightside.com"
+      }
+  ],
+  "require": {
+    "typo3/cms-core": "^9.5",
+    "typo3/cms-fluid-styled-content": "^9.5",
+    "gridelementsteam/gridelements": "dev-master"
+  },
+  "suggest": {
+		"t3brightside/pagelist": "Page teasers, articles, events, products etc",
+    "t3brightside/personnel": "Contact lists with vCard support",
+    "t3brightside/youtubevideo": "Responsive YouTube videos with cover image"
+	},
+  "replace": {
+    "macrotemplate": "self.version",
+    "typo3-ter/macrotemplate": "self.version"
+  }
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels and descriptions for database tables/fields belonging to extension 'macrotemplate'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="macrotemplatepageimages.tab">Images</label>
+      <label index="tx_macrotemplate_headerimage.title">Header Image</label>
+      <label index="tx_macrotemplate_icon.title">Page Icon</label>
+			<label index="tx_macrotemplate_logo.title">Logo</label>
+		</languageKey>
+	</data>
+</T3locallang>

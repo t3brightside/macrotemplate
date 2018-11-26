@@ -1,0 +1,3 @@
+# customsubcategory=macrotemplatekanalytics=Macrotemplate Google Analytics
+# cat=Macrotemplate/macrotemplatekanalytics; type=string; label=Google Analytics Code
+	macrotemplate.googleAnalyticsCode = XX-XXXXXXXX-X

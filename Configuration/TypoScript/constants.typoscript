@@ -1,0 +1,62 @@
+# customsubcategory=macrotemplate=Macrotemplate setup
+# cat=Macrotemplate/macrotemplate; type=string; label= Home page ID (Has to be set if Home is a sub page)
+	macrotemplate.rootPageId = 1
+# cat=Macrotemplate/macrotemplate; type=string; label= Domain name with https(s) and ending /:Example: https://emaple.com/;
+	macrotemplate.domainName = /
+# cat=Macrotemplate/macrotemplate; type=string; label= Locale (en_UK, de_DE...)
+	macrotemplate.locale_all = en_UK
+# cat=Macrotemplate/macrotemplate; type=int; label= Cache max age in seconds
+	macrotemplate.cacheControlMaxAge = 3600
+# cat=Macrotemplate/macrotemplate; type=string; label= jQuery version number
+	macrotemplate.jQueryVersion = 3.3.1
+
+# customsubcategory=macrotemplatestyles=Macrotemplate styles & design
+# cat=Macrotemplate/macrotemplatestyles; type=string; label=Logo file location: Or add file in home page settings 'Resources' -> 'Media'
+	macrotemplate.logoFile = typo3conf/ext/macrotemplate/Resources/Public/Images/brightside_logo.svg
+# cat=Macrotemplate/macrotemplatestyles; type=color; label= Default text color: Body, headers, main menu
+	macrotemplate.text-default = #111111
+# cat=Macrotemplate/macrotemplatestyles; type=color; label= Default background color
+	macrotemplate.body-background = #ffffff
+# cat=Macrotemplate/macrotemplatestyles; type=color; label= Accent color:Link color & button background
+	macrotemplate.accentColor = #242ceb
+# cat=Macrotemplate/macrotemplatestyles; type=color; label= Light text:Used on dark background or if set in section settings
+	macrotemplate.text-light = #ffffff
+# cat=Macrotemplate/macrotemplatestyles; type=color; label= Dark text:Used on light background or if set in section settings
+	macrotemplate.text-dark = #000000
+# cat=Macrotemplate/macrotemplatestyles; type=color; label= Default section background
+	macrotemplate.ge-section.bg-default = #ffffff
+# cat=Macrotemplate/macrotemplatestyles; type=color; label= Light section background
+	macrotemplate.ge-section.bg-light = #f2f2f2
+# cat=Macrotemplate/macrotemplatestyles; type=color; label= Dark section background
+	macrotemplate.ge-section.bg-dark = #353535
+# cat=Macrotemplate/macrotemplatestyles; type=color; label= Header background
+	macrotemplate.header-bg = #ffffff
+# cat=Macrotemplate/macrotemplatestyles; type=string; label= Maximum home page width (px, em or %)
+	macrotemplate.pageWidth = 100%
+# cat=Macrotemplate/macrotemplatestyles; type=string; label= Maximum home page content width (px, em or %)
+	macrotemplate.contentWidth = 1240px
+# cat=Macrotemplate/macrotemplatestyles; type=string; label= Maximum sub page content width (px, em or %)
+	macrotemplate.subpageContentWidth = 860px
+# cat=Macrotemplate/macrotemplatestyles; type=int; label= Content section background image width (px)
+	macrotemplate.ge-section.bg-width = 1400
+# cat=Macrotemplate/macrotemplatestyles; type=int[10-100]; label= Content section background jpg quality
+	macrotemplate.ge-section.bg-quality = 80
+# cat=Macrotemplate/macrotemplatestyles; type=int; label= Sub-page header image width
+	macrotemplate.subPageImafeWidth = 1400c
+# cat=Macrotemplate/macrotemplatestyles; type=int; label= Sub-page header image height
+	macrotemplate.subPageImafeHeight = 500c
+# cat=Macrotemplate/macrotemplatestyles; type=int; label= Maximum image width (px)
+	styles.content.textmedia.maxW = 1200
+# cat=Macrotemplate/macrotemplatestyles; type=int; label= Maximum image width in text (px)
+	styles.content.textmedia.maxWInText = 600
+
+# Sets default header type for sub pages
+	styles.content.defaultHeaderType = 2
+# Sets default header type for home page
+	[globalVar = TSFE:page|backend_layout = pagets__home]
+		styles.content.defaultHeaderType = 1
+	[global]
+
+macrotemplate.partialRootPath = EXT:macrotemplate/Resources/Private/Partials/
+macrotemplate.layoutRootPath = EXT:macrotemplate/Resources/Private/Layouts/
+macrotemplate.templateRootPaths = EXT:macrotemplate/Resources/Private/Templates/

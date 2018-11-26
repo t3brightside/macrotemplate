@@ -1,0 +1,44 @@
+<body class="subpage">
+	<div id="cTop">
+	<div id="p{data.uid}">
+		<div id="header">
+			<div class="header-bg"></div>
+			<div class="pageWidth">
+				<div class="contentWidth">
+					<f:render partial="Logo" arguments="{_all}" />
+					<f:render partial="MenuLanguage" arguments="{_all}" />
+					<f:render partial="MenuMain" arguments="{_all}" />
+				</div>
+			</div>
+		</div>
+		<f:render partial="Header" arguments="{_all}" />
+		<div id="content">
+			<div class="pageWidth">
+				<div class="contentWidth">
+					<f:if condition="{data.doktype} == 136">
+						<article>
+							<header>
+								<f:render partial="ArticleContentHeader" arguments="{_all}" />
+							</header>
+					</f:if>
+					<f:if condition="{data.doktype} == 137">
+						<article>
+							<header>
+								<f:render partial="EventContentHeader" arguments="{_all}" />
+							</header>
+					</f:if>
+					<f:format.raw>{content}</f:format.raw>
+					<f:if condition="{data.doktype} == 136">
+						</article>
+					</f:if>
+				</div>
+	    </div>
+		</div>
+		<div id="footer">
+			<div class="pageWidth">
+				<f:format.raw>{footer}</f:format.raw>
+	    </div>
+		</div>
+	</div>
+</div>
+</body>

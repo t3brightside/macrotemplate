@@ -1,0 +1,47 @@
+page {
+	includeCSS.cookie_consent = EXT:macrotemplate/Extensions/cookie_consent/Resources/Public/Styles/cookie_concent.css
+	headerData {
+		1005 = TEXT
+		1005.value (
+			<style>
+				input:checked+.slider {background-color: {$macrotemplate.accentColor}}
+				.cc-allow:hover, .cc-link:hover, .cc-dismiss:hover {color: {$macrotemplate.accentColor}}
+			</style>
+		)
+	}
+}
+page.includeJSFooterlibs.cookieconsent = //cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js
+page.includeJSFooterlibs.cookieconsent {
+	external = 1
+	async = 1
+	excludeFromConcatenation = 1
+	disableCompression = 1
+}
+
+page.jsFooterInline {
+	10003346 = TEXT
+	10003346.value (
+		window.addEventListener("load", function(){
+		window.cookieconsent.initialise({
+		  "type": "opt-in",
+			revokable: "false",
+		  "content": {
+			  "message": "{$macrotemplate.ccmessage}",
+		    "dismiss": "{$macrotemplate.ccdismiss}",
+				"allow": "{$macrotemplate.ccallow}",
+		    "link": "{$macrotemplate.ccmore}",
+		    "href": "{$macrotemplate.cchref}",
+		  },
+		  elements: {
+			  messagelink: '<div id="cookieconsent:desc" class="cc-message">{{message}} <a class="cc-link" href="{{href}}">{{link}}</a></div>',
+			  dismiss: '<a class="cc-opt-link cc-btn cc-dismiss">{{dismiss}}</a>',
+				allow: '<a class="btn cc-opt-link cc-btn cc-allow button">{{allow}}</a>',
+			},
+		/*	onStatusChange: function(status, chosenBefore) {
+			  if (status == cookieconsent.status.allow) {
+			    gaOptin();
+			  }
+			}, */
+		})});
+	)
+}
