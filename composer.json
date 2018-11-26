@@ -1,6 +1,6 @@
 {
   "name": "t3brightside/macrotemplate",
-  "description": "TYPO3 CMS template – Brightside's kickstart template package.",
+  "description": "TYPO3 CMS template – plug and play template to start a TYPO3 project with.",
   "type": "typo3-cms-extension",
   "version": "0.1.0",
   "keywords": ["TYPO3 CMS", "Template", "Design", "Fluid", "Corporate"],
