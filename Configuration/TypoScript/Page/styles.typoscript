@@ -8,8 +8,15 @@ config {
 page {
 	includeCSS {
 		macrotemplate = EXT:macrotemplate/Resources/Public/Styles/Page/macrotemplate.css
+		macrotemplate.inline = 1
+    macrotemplate.forceOnTop = 1
+    macrotemplate.media = all
 		menu_main = EXT:macrotemplate/Resources/Public/Styles/Page/menu_main.css
+		menu_main.inline = 1
+    menu_main.media = all
 		menu_language = EXT:macrotemplate/Resources/Public/Styles/Page/menu_language.css
+		menu_language.inline = 1
+    menu_language.media = all
 	}
 	headerData {
 		1001 = TEXT

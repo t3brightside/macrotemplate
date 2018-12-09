@@ -53,7 +53,7 @@ p, ul, ol, table, form {
   margin-bottom: 1em;
 }
 
-h2, h3, h4, p, ul, ol {
+h2, h3, h4, p, ul, ol, blockquote {
   max-width: 44em
 }
 
@@ -108,6 +108,19 @@ ul {
   list-style: disc;
 }
 
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+blockquote {
+  font-style: italic;
+  padding: 1em;
+  border-left: 4px solid #ccc;
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
 hr {
   border: none;
   background-color: #ddd;
@@ -120,11 +133,8 @@ hr {
 }
 
 table {
-  font-size: .9em;
-}
-
-th {
-  font-weight: 700;
+  font-size: .85em;
+  margin-top: 1em;
 }
 
 th, td {
@@ -135,12 +145,20 @@ th, td {
   padding-right: .6em;
 }
 
+thead th {
+  border-right: none;
+}
+
+th:first-child, td:first-child {
+  padding-left: 0;
+}
+
 th:last-child, td:last-child {
   border-right: none;
   padding-right: 0;
 }
 
-tr:last-child td {
+tbody tr:last-child td, tbody tr:last-child th {
   border-bottom: none;
   padding-bottom: 0;
 }
@@ -171,6 +189,7 @@ tr:last-child td {
   cursor: pointer;
   opacity: 0.7;
 }
+
 .btn.light, .btn.light:visited {
   background: transparent;
   color: #242ceb;
@@ -485,6 +504,7 @@ tr:last-child td {
 .frame-layout-1 {
   background-color: #f2f2f2;
 }
+
 .frame-layout-2 {
   background-color: #555;
   color: #fff;
@@ -498,14 +518,16 @@ tr:last-child td {
 .frame-layout-1 *:first-child, .frame-layout-2 *:first-child, .frame-layout-3 *:first-child {
   margin-top: 0;
 }
+
 .frame-layout-1 *:last-child, .frame-layout-2 *:last-child, .frame-layout-3 *:last-child {
   margin-bottom: 0;
 }
+
 .frame-layout-1 h2, .frame-layout-2 h2, .frame-layout-3 h2 {
   font-size: 1.6em;
   margin-bottom: 0.35em !important;
-
 }
+
 .ce-bodytext a {
   font-weight: 600;
 }
