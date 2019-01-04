@@ -1,24 +1,20 @@
 config {
-  metaCharset = utf-8
   typolinkEnableLinksAcrossDomains = 1
   cache_period = {$macrotemplate.cacheControlMaxAge}
   sendCacheHeaders=1
   absRefPrefix = {$macrotemplate.domainName}
-  baseURL = {$macrotemplate.domainName}
 	spamProtectEmailAddresses = -1
   spamProtectEmailAddresses_atSubst = @
   spamProtectEmailAddresses_lastDotSubst = .
   sys_language_mode = content_fallback
-#  sys_language_overlay = hideNonTranslated
+# sys_language_overlay = hideNonTranslated
 }
 
 # Sub pages header image and it's placement
   lib.headerImage = FILES
   lib.headerImage {
     maxItems = 1
-    references {
-      data = levelfield:-1,tx_macrotemplate_headerimage,slide
-    }
+    references.data = levelfield:-1,tx_macrotemplate_headerimage,slide
     renderObj = COA
     renderObj {
       15 = IMG_RESOURCE
