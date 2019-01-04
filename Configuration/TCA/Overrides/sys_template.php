@@ -35,4 +35,14 @@ call_user_func(function()
     'Extensions/cookie_consent/Configuration/TypoScript',
     'Macrotemplate - script: Cookie Consent'
   );
+  if (TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('personnel')){
+  	\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTypoScriptConstants('
+  		macrotemplate.personnelIsLoaded = 1
+  	');
+  } else {
+  	\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTypoScriptConstants('
+  		macrotemplate.personnelIsLoaded = 0
+  	');
+  }
+
 });
