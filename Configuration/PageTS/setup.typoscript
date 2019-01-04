@@ -1,17 +1,7 @@
-@import 'EXT:macrotemplate/Configuration/PageTS/Include/'
-
-# set default language for the page module
-	mod {
-		SHARED {
-			defaultLanguageFlag = gb
-			defaultLanguageLabel = English
-		}
-	}
+@import 'EXT:macrotemplate/Configuration/PageTS/Include/'	
 
 # RTE setup defined in ext_localconf.php
 	RTE.default.preset = macrotemplate
-# only for 'bodytext' field example
-#	RTE.config.tt_content.bodytext.preset = macrotemplate
 
 
 # set default back end group permissions

@@ -15,7 +15,7 @@ page {
 		)
 	}
 }
-[globalVar = LIT:1 = {$macrotemplate.ccactive}]
+[{$macrotemplate.ccactive} == 1]
 page {
 	jsFooterInline {
 		100033486 = TEXT
@@ -68,4 +68,4 @@ page {
 		)
 	}
 }
-[global]
+[end]

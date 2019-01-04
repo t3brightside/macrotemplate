@@ -104,7 +104,7 @@
   transform-origin: bottom;
 }
 
-#menu>nav>ul>li:hover>ul {
+#menu>nav>ul>li:hover>ul, #menu>nav>ul>li:focus-within>ul {
   opacity: 1;
   height: auto;
   transform: scaleY(1);

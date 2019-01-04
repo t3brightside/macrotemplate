@@ -31,7 +31,7 @@
   left: -1.15em;
   overflow: hidden;
 }
-#menu-language:hover ul {
+#menu-language:hover ul, #menu-language:focus-within ul {
   height: auto;
   opacity: 1;
 }

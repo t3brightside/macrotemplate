@@ -15,8 +15,8 @@ page {
 	}
 }
 # include only in sub pages
-[globalVar = TSFE:page|backend_layout = pagets__sub]
-# create menu items out of top most content elements, gridelements page secrions in this template
+[page["backend_layout"] == "pagets__sub"]
+# create menu items out of top most content elements, gridelements page sections in this template
 	menuLinks = COA
 	menuLinks {
 		10 = CONTENT
@@ -44,4 +44,4 @@ page {
 		10 < menuLinks
 	#	20 < menuContentForExample
 	}
-[global]
+[END]
