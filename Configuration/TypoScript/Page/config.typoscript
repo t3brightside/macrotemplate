@@ -3,6 +3,7 @@ config {
   cache_period = {$macrotemplate.cacheControlMaxAge}
   sendCacheHeaders=1
   absRefPrefix = {$macrotemplate.domainName}
+  baseURL = {$macrotemplate.domainName}
 	spamProtectEmailAddresses = -1
   spamProtectEmailAddresses_atSubst = @
   spamProtectEmailAddresses_lastDotSubst = .
