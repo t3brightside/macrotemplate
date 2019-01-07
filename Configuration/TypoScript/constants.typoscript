@@ -3,8 +3,6 @@
 	macrotemplate.rootPageId = 1
 # cat=Macrotemplate/macrotemplate; type=string; label= Domain name with https(s) and ending /:Example: https://emaple.com/;
 	macrotemplate.domainName = /
-# cat=Macrotemplate/macrotemplate; type=string; label= Locale (en_UK, de_DE...)
-	macrotemplate.locale_all = en_UK
 # cat=Macrotemplate/macrotemplate; type=int; label= Cache max age in seconds
 	macrotemplate.cacheControlMaxAge = 3600
 # cat=Macrotemplate/macrotemplate; type=string; label= jQuery version number
