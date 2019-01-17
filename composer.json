@@ -20,10 +20,10 @@
     "gridelementsteam/gridelements": "dev-master"
   },
   "suggest": {
-		"t3brightside/pagelist": "Page teasers, articles, events, products etc",
+	"t3brightside/pagelist": "Page teasers, articles, events, products etc",
     "t3brightside/personnel": "Contact lists with vCard support",
     "t3brightside/youtubevideo": "Responsive YouTube videos with cover image"
-	},
+  },
   "replace": {
     "macrotemplate": "self.version",
     "typo3-ter/macrotemplate": "self.version"

@@ -51,7 +51,7 @@ $tca = [
 							\TYPO3\CMS\Core\Resource\File::FILETYPE_IMAGE => [
 								'showitem' => '
 									tx_macrotemplate_headerimage_placement,crop,
-			            --palette--;;filePalette'
+			            			--palette--;;filePalette'
 							],
 						],
 					],
