@@ -3,30 +3,30 @@ defined('TYPO3_MODE') || die();
 
 $tcaHeaderImage = [
 	'tx_macrotemplate_headerimage_placement' => [
-    'exclude' => 1,
-    'label' => 'Image Placement on Resize',
-    'config' => [
-      'type' => 'select',
+	    'exclude' => 1,
+	    'label' => 'Image Placement on Resize',
+	    'config' => [
+	    	'type' => 'select',
 			'renderType' => 'selectSingle',
-      'items' => [
-        ['Center', 'center center'],
-        ['Left', 'left center'],
+			'items' => [
+				['Center', 'center center'],
+				['Left', 'left center'],
 				['Right', 'right center'],
-      ],
-    ],
-  ],
+			],
+    	],
+  	],
 ];
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('sys_file_reference',$tcaHeaderImage,1);
 
 $tca = [
 	'palettes' => [
 		'macrotemplateimages' => [
-				'label' => 'Template Images',
-				'showitem' => '
-					tx_macrotemplate_headerimage,
-					--linebreak--,
-					tx_macrotemplate_icon,
-				',
+			'label' => 'Template Images',
+			'showitem' => '
+				tx_macrotemplate_headerimage,
+				--linebreak--,
+				tx_macrotemplate_icon,
+			',
 		],
 	],
 	'columns' => [
@@ -91,20 +91,10 @@ $tca = [
 ];
 $GLOBALS['TCA']['pages'] = array_replace_recursive($GLOBALS['TCA']['pages'], $tca);
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
-  'pages','
-    --palette--;;macrotemplateimages,
-  ',
-  (string)\TYPO3\CMS\Frontend\Page\PageRepository::DOKTYPE_DEFAULT,
-  'after:media'
-);
-
-$GLOBALS['TCA']['pages_language_overlay'] = array_replace_recursive($GLOBALS['TCA']['pages_language_overlay'], $tca);
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
-  'pages_language_overlay','
-    --palette--;;macrotemplateimages,
-  ',
-  (string)\TYPO3\CMS\Frontend\Page\PageRepository::DOKTYPE_DEFAULT,
-  'after:media'
+	'pages',
+	'--palette--;;macrotemplateimages,',
+	'',
+	'before:tsconfig_includes'
 );
 
 call_user_func(function()

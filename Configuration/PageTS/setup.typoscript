@@ -1,4 +1,4 @@
-@import 'EXT:macrotemplate/Configuration/PageTS/Include/'	
+@import 'EXT:macrotemplate/Configuration/PageTS/Include/'
 
 # RTE setup defined in ext_localconf.php
 	RTE.default.preset = macrotemplate
@@ -12,15 +12,8 @@
 # disable some content elements and some fields for pages and content elements
 	TCEFORM {
 	  pages {
-			media.disabled = 1
 		  alias.disabled = 1
-		  newUntil.disabled = 1
 		  layout.disabled = 1
-		  url_scheme.disabled = 1
-		  tx_realurl_pathoverride.disabled = 1
-		}
-		pages_language_overlay {
-			media.disabled = 1
 		}
 		tt_content {
 			CType.removeItems = text, textpic, image, bullets, search
