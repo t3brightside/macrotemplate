@@ -632,7 +632,6 @@ ul.ce-uploads li .ce-uploads-filesize {
 /* ext:youtubevideo */
 #content .youtubeVideo {
   max-width: 110vh;
-  margin: auto;
   float: none;
 }
 
