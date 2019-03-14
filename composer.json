@@ -17,7 +17,7 @@
   "require": {
     "typo3/cms-core": "^9.5",
     "typo3/cms-fluid-styled-content": "^9.5",
-    "gridelementsteam/gridelements": "dev-master"
+    "gridelementsteam/gridelements": "^9.1"
   },
   "suggest": {
 	"t3brightside/pagelist": "Page teasers, articles, events, products etc",
