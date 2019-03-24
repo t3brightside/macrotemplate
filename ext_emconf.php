@@ -1,7 +1,7 @@
 <?php
   $EM_CONF[$_EXTKEY] = [
     'title' => 'Macrotemplate',
-    'description' => 'Corporste template package. Demo at: https://macrotemplate.t3brightside.com',
+    'description' => 'TYPO3 CMS template package. Demo at: https://macrotemplate.t3brightside.com',
     'category' => 'templates',
     'constraints' => [
       'depends' => [

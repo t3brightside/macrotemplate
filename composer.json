@@ -1,6 +1,6 @@
 {
   "name": "t3brightside/macrotemplate",
-  "description": "TYPO3 CMS template – plug and play template to start a TYPO3 project with.",
+  "description": "TYPO3 CMS template package.",
   "type": "typo3-cms-extension",
   "version": "0.0.1",
   "keywords": ["TYPO3 CMS", "Template", "Design", "Fluid", "Corporate"],
@@ -11,7 +11,7 @@
           "name": "Tanel Põld",
           "role": "Developer",
           "email": "info@t3brightside.com",
-          "homepage": "https://t3brightside.com"
+          "homepage": "https://macrotemplate.t3brightside.com"
       }
   ],
   "require": {
