@@ -11,7 +11,7 @@
       'conflicts' => [
       ],
     ],
-    'state' => 'beta',
+    'state' => 'alpha',
     'uploadfolder' => 0,
     'createDirs' => '',
     'clearCacheOnLoad' => 1,
