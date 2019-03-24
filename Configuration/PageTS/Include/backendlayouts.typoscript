@@ -30,7 +30,7 @@ mod.web_layout.BackendLayouts {
 		}
 	}
   sub {
-    title = Sub page
+    title = Sub
     config {
 			backend_layout {
 				colCount = 1

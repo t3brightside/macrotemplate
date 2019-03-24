@@ -13,7 +13,7 @@
 
 ## Features
 
-It's a plug & play template that works out of the box. It's based on TYPO3 FLUID templates.
+It's a plug & play template that works out of the box.
 
 - Can be installed in multi domain setup or just for a sub page
 - Modular architecture
@@ -27,7 +27,7 @@ It's a plug & play template that works out of the box. It's based on TYPO3 FLUID
 - Install from TER **corptemplate** or composer **t3brightside/corptemplate**, include static templates you need, adjust template constants.
 - **Note:** Include fluid_styled_content as the first static template in the list.
 - **Edit home page** to set _'Resources -> Include Page TSConfig -> Macrotemplate – Main'_ and save
-- **Edit home page** to set _'Appearance -> Page layout -> Backend layout -> Home'_
+- **Edit home page** to set _'Appearance -> Page layout -> Backend layout -> Home'_ and _'Appearance -> Page layout -> Backend layout (subpages) -> Sub'_
 
 ## Editors
 - Logo can be added to home page _'Images -> Logo'_.
