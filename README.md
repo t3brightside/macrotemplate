@@ -52,9 +52,9 @@ These extensions are preconfigured and tested in Macrotemplate package.
 - [favicon](https://extensions.typo3.org/extension/favicon/) – Favicon in page meta data
 ## Sources
 
-- [GitHub](https://github.com/t3brightside/corptemplate)
-- [Packagist](https://packagist.org/packages/t3brightside/corptemplate)
-- [TER](https://extensions.typo3.org/extension/corptemplate/)
+- [GitHub](https://github.com/t3brightside/macrotemplate)
+- [Packagist](https://packagist.org/packages/t3brightside/macrotemplate)
+- [TER](https://extensions.typo3.org/extension/macrotemplate/)
 
 ## Development and maintenance
 
