@@ -18,5 +18,5 @@
     'author' => 'Tanel Põld',
     'author_email' => 'tanel@brightside.ee',
     'author_company' => 'Brightside OÜ',
-    'version' => '0.1.2',
+    'version' => '0.0.1',
   ];
