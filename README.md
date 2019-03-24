@@ -3,7 +3,7 @@
 **TYPO3 CMS template extension for multilevel web pages.**
 <br />For building websites for companies, NGO's, events etc.
 
-**[Demo page](https://corptemplate.t3brightside.com/)**
+**[Demo page](https://macrotemplate.t3brightside.com/)**
 
 ## System requirements
 
@@ -42,17 +42,14 @@ It's a plug & play template that works out of the box.
 </p>
 ```
 
-## Admins
-- Back end language flag, title and other settings can be altered in: _Configuration/TypoScript/PageTS/setup.ts_
-
 ## Recommended
 These extensions are preconfigured and tested in Macrotemplate package.
 - [personnel](https://extensions.typo3.org/extension/personnel/)
  – Contact persons information with vCard support
 - [pagelist](https://extensions.typo3.org/extension/pagelist/) – Page teasers, article lists etc
 - [youtubevideo](https://extensions.typo3.org/extension/youtubevideo/) – YouTube videos with cover images and cover text
-- [metaplus](https://extensions.typo3.org/extension/metaplus/) – Page title prefix, suffix, favicon and OpenGraph image
-
+- [advancedtitle](https://extensions.typo3.org/extension/advancedtitle/) – Page title prefix & suffix
+- [favicon](https://extensions.typo3.org/extension/favicon/) – Favicon in page meta data
 ## Sources
 
 - [GitHub](https://github.com/t3brightside/corptemplate)
