@@ -40,6 +40,12 @@ page {
 				.ge-section.text-light {color: {$macrotemplate.text-light}}
 				.ge-section.text-dark {color: {$macrotemplate.text-dark}}
 
+				a.ge-accordion-section-title, a.ge-accordion-section-title:visited {color: {$macrotemplate.text-default}}
+				a.ge-accordion-section-title:hover {color: {$macrotemplate.accentColor}}
+				.ge-accordion-section-title::after, .ge-accordion-section-title::before {background-color: {$macrotemplate.text-default}}
+				.ge-accordion-section-title:hover::after, .ge-accordion-section-title:hover::before {background-color: {$macrotemplate.accentColor}}
+
+
 				.subpage {color: {$macrotemplate.text-dark}}
 			</style>
 		)
