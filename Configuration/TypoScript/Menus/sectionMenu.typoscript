@@ -30,7 +30,7 @@ page {
 				10 = TEXT
 				10 {
 					dataWrap = <li class="m{field:uid}">|</li>
-	        field = header
+	        		field = header
 					typolink.parameter.field = pid
 					typolink.section.field = uid
 					required = 1

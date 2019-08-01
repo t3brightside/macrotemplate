@@ -1,14 +1,12 @@
 config {
-  typolinkEnableLinksAcrossDomains = 1
-  cache_period = {$macrotemplate.cacheControlMaxAge}
-  sendCacheHeaders=1
-  absRefPrefix = {$macrotemplate.domainName}
-  baseURL = {$macrotemplate.domainName}
-	spamProtectEmailAddresses = -1
-  spamProtectEmailAddresses_atSubst = @
-  spamProtectEmailAddresses_lastDotSubst = .
-  sys_language_mode = content_fallback
-# sys_language_overlay = hideNonTranslated
+    typolinkEnableLinksAcrossDomains = 1
+    cache_period = {$macrotemplate.cacheControlMaxAge}
+    sendCacheHeaders=1
+    absRefPrefix = {$macrotemplate.domainName}
+    baseURL = {$macrotemplate.domainName}
+    spamProtectEmailAddresses = -1
+    spamProtectEmailAddresses_atSubst = @
+    spamProtectEmailAddresses_lastDotSubst = .
 }
 
 # Sub pages header image and it's placement
