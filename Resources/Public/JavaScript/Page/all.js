@@ -84,17 +84,23 @@ $(document).ready(function() {
         } else {
             $("#unmute").next().prop('muted', true);
         }
+        $("#header").fadeToggle();
         $("#unmute").next().next().fadeToggle();
 
     });
 });
+var position = $(window).scrollTop();
+var position = position + 245;
 jQuery(window).scroll(function() {
     var scroll = jQuery(window).scrollTop();
-    if (scroll >= 245) {
-        if( $("#header, .home h1, .home p").css('display') == 'none')
+    if (scroll > position) {
+        if( $("#header").css('display') == 'none')
         {
+            $("#header").fadeToggle();
             $("#unmute").next().next().fadeToggle();
             $("#unmute").next().prop('muted', true);
         }
+        else { }
+        position = scroll;
     }
 });
