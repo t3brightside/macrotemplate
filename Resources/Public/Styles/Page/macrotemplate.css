@@ -900,7 +900,9 @@ form span.error:before {
         font-size: 2.6em;
         line-height: 1.2em;
     }
-
+     .ge-section.home h1, .ge-section.home p {
+         margin-left: 0px;
+     }
     input, select, textarea {
         width: 100%;
     }
