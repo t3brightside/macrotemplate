@@ -78,4 +78,23 @@ $(document).ready(function() {
             $(this).removeClass("error")
         }
     });
+    $("#unmute").click( function(){
+        if( $("#unmute").next().prop('muted') ) {
+            $("#unmute").next().prop('muted', false);
+        } else {
+            $("#unmute").next().prop('muted', true);
+        }
+        $("#unmute").next().next().fadeToggle();
+
+    });
+});
+jQuery(window).scroll(function() {
+    var scroll = jQuery(window).scrollTop();
+    if (scroll >= 245) {
+        if( $("#header, .home h1, .home p").css('display') == 'none')
+        {
+            $("#unmute").next().next().fadeToggle();
+            $("#unmute").next().prop('muted', true);
+        }
+    }
 });

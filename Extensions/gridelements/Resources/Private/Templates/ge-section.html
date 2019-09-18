@@ -24,6 +24,7 @@
 		{f:if(condition: '{data.flexform_bgcolor}', then: 'background-color: {data.flexform_bgcolor};')}
 	">
 	<f:if condition="{data.flexform_bgvideo}">
+		<button id="unmute">Unmute</button>
 		<video id="videoid{data.uid}" class="bg-video" playsinline autoplay muted {f:if(condition: '{data.flexform_noloop}', then: '', else: 'loop')}>
 			<f:for each="{files}" as="file">
 		    	<source src="{file.publicUrl}" type="{file.mimetype}">

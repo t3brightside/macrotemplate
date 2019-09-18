@@ -314,7 +314,6 @@ tbody tr:last-child td, tbody tr:last-child th {
 }
 
 #content {
-    padding-top: 0.2em;
     padding-bottom: 2.5em;
 }
 
@@ -393,7 +392,17 @@ tbody tr:last-child td, tbody tr:last-child th {
     transform: translate(-50%, -50%);
     z-index: 1;
 }
-
+#unmute {
+    position: absolute;
+    right: 5em;
+    bottom: 5em;
+    z-index: 3;
+    background: rgba(255, 255, 255, 0.2);
+    text-transform: uppercase;
+    padding: 0.5em;
+    color: #fff;
+    line-height: 1em;
+}
 .ge-section.bg1 .bg-video {
     left: 0;
     top: 50%;
