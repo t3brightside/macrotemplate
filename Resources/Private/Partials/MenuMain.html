@@ -1,22 +1,22 @@
 <a class="hmbrgr" aria-label="menu" href="javascript:void(0)"><b><i class="f"></i><i class="m"></i><i class="l"></i></b></a>
 <div id="menu">
-  <nav>
-    <ul>
-      <f:for each="{menuMain}" as="menuItem">
-         <li class="{f:if(condition:menuItem.active, then:'act')} {f:if(condition:menuItem.children, then:'has-sub')} ">
-           <f:if condition="{menuItem.children}"><i class="submenu-button"><i></i><i></i></i></f:if>
-           <f:link.page pageUid="{menuItem.data.uid}" class="{f:if(condition:menuItem.active, then:'act')}">{menuItem.title}</f:link.page>
-            <f:if condition="{menuItem.children}">
-              <ul>
-            		<f:for each="{menuItem.children}" as="subItem">
-                  <li>
-                    <f:link.page pageUid="{subItem.data.uid}" class="{f:if(condition:subItem.active, then:'act')} {f:if(condition:subItem.hassub, then:'has-sub')}">{subItem.title}</f:link.page>
-                  </li>
-            		</f:for>
-            	</ul>
-      			</f:if>
-         </li>
-      </f:for>
-    </ul>
-  </nav>
+    <nav>
+        <ul>
+            <f:for each="{menuMain}" as="menuItem">
+                <li class="{f:if(condition:menuItem.active, then:'act')} {f:if(condition:menuItem.children, then:'has-sub')} ">
+                    <f:if condition="{menuItem.children}"><i class="submenu-button"><i></i><i></i></i></f:if>
+                    <f:link.page pageUid="{menuItem.data.uid}" class="{f:if(condition:menuItem.active, then:'act')}">{menuItem.title}</f:link.page>
+                    <f:if condition="{menuItem.children}">
+                        <ul>
+                            <f:for each="{menuItem.children}" as="subItem">
+                                <li>
+                                    <f:link.page pageUid="{subItem.data.uid}" class="{f:if(condition:subItem.active, then:'act')} {f:if(condition:subItem.hassub, then:'has-sub')}">{subItem.title}</f:link.page>
+                                </li>
+                            </f:for>
+                        </ul>
+                    </f:if>
+                </li>
+            </f:for>
+        </ul>
+    </nav>
 </div>
