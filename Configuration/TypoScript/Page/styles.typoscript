@@ -9,20 +9,26 @@ page {
 	includeCSS {
 		macrotemplate = EXT:macrotemplate/Resources/Public/Styles/Page/macrotemplate.css
 		macrotemplate.inline = 1
-    macrotemplate.forceOnTop = 1
-    macrotemplate.media = all
+	    macrotemplate.forceOnTop = 1
+	    macrotemplate.media = all
 		menu_main = EXT:macrotemplate/Resources/Public/Styles/Page/menu_main.css
 		menu_main.inline = 1
-    menu_main.media = all
+    	menu_main.media = all
 		menu_language = EXT:macrotemplate/Resources/Public/Styles/Page/menu_language.css
 		menu_language.inline = 1
-    menu_language.media = all
+    	menu_language.media = all
+		googleFonts = {$macrotemplate.google-font-link}
+		googleFonts.external = 1
+		googleFonts.media = all
 	}
 	headerData {
 		1001 = TEXT
 		1001.value (
 			<style>
 				body {color: {$macrotemplate.text-default}; background-color: {$macrotemplate.body-background}}
+				body, input, select, textarea, button {font-family: {$macrotemplate.main-font-family}}
+				h1,h2,h3,h4,.ce-bodytext .headerFont,  .form-group>label, .control-label, #menu, .pagelist.list .event .dates {font-family: {$macrotemplate.header-font-family}, {$macrotemplate.main-font-family}}
+
 				.header-bg {background: {$macrotemplate.header-bg}}
 				.pageWidth {max-width: {$macrotemplate.pageWidth}}
 				.contentWidth {max-width: {$macrotemplate.contentWidth}}
@@ -44,7 +50,6 @@ page {
 				a.ge-accordion-section-title:hover {color: {$macrotemplate.accentColor}}
 				.ge-accordion-section-title::after, .ge-accordion-section-title::before {background-color: {$macrotemplate.text-default}}
 				.ge-accordion-section-title:hover::after, .ge-accordion-section-title:hover::before {background-color: {$macrotemplate.accentColor}}
-
 
 				.subpage {color: {$macrotemplate.text-dark}}
 			</style>

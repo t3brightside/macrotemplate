@@ -1,3 +1,2 @@
 @import "EXT:macrotemplate/Configuration/TypoScript/Page/"
 @import "EXT:macrotemplate/Extensions/gridelements/Configuration/TypoScript/"
-# @import "EXT:macrotemplate/Configuration/TypoScript/Menus/"

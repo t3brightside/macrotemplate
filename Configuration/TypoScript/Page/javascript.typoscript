@@ -3,7 +3,6 @@ config {
 	concatenateJs = 1
 	compressJs = 1
 	moveJsFromHeaderToFooter = 1
-	removeDefaultJS =
 }
 
 page.includeJSLibs.jQuery = //cdnjs.cloudflare.com/ajax/libs/jquery/{$macrotemplate.jQueryVersion}/jquery.min.js

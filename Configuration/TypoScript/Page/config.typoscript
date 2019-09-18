@@ -10,50 +10,48 @@ config {
 }
 
 # Sub pages header image and it's placement
-  lib.headerImage = FILES
-  lib.headerImage {
-    maxItems = 1
-    references.data = levelfield:-1,tx_macrotemplate_headerimage,slide
-    renderObj = COA
-    renderObj {
-      15 = IMG_RESOURCE
-      15 {
-        file.import.data = file:current:publicUrl
-        file.treatIdAsReference = 1
-        file.crop.data = file:current:crop
-        file.width = {$macrotemplate.subPageImafeWidth}
-        file.height = {$macrotemplate.subPageImafeHeight}
-      }
+    lib.headerImage = FILES
+    lib.headerImage {
+        maxItems = 1
+        references.data = levelfield:-1,tx_macrotemplate_headerimage,slide
+        renderObj = COA
+        renderObj {
+            15 = IMG_RESOURCE
+            15 {
+                file.import.data = file:current:publicUrl
+                file.treatIdAsReference = 1
+                file.crop.data = file:current:crop
+                file.width = {$macrotemplate.subPageImafeWidth}
+                file.height = {$macrotemplate.subPageImafeHeight}
+            }
+        }
     }
-  }
-  lib.headerImagePosition = FILES
-  lib.headerImagePosition {
-    references {
-      data = levelfield:-1,tx_macrotemplate_headerimage,slide
+    lib.headerImagePosition = FILES
+    lib.headerImagePosition {
+        references.data = levelfield:-1,tx_macrotemplate_headerimage,slide
+        renderObj = COA
+        renderObj.20 = TEXT
+        renderObj.20.value.data = file:current:tx_macrotemplate_headerimage_placement
     }
-    renderObj = COA
-    renderObj.20 = TEXT
-    renderObj.20.value.data = file:current:tx_macrotemplate_headerimage_placement
-  }
 
 # Header data
-  page {
+    page {
   	config {
     	headerComment (
 **********************************************************************
 *   Based on Macrotemplate: https://macrotemplate.t3brightside.com    *
 **********************************************************************
-    	)
+        	)
+        }
+      	meta.viewport.value = width=device-width, initial-scale=1.0
+      	meta.keywords.data = page:keywords
+      	meta.description.data = page:description
+      	headerData.899 = TEXT
+      	headerData.899.value (
+      		<link rel="preconnect" href="https://cdnjs.cloudflare.com/" crossorigin>
+      		<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+        )
     }
-  	meta.viewport.value = width=device-width, initial-scale=1.0
-  	meta.keywords.data = page:keywords
-  	meta.description.data = page:description
-  	headerData.899 = TEXT
-  	headerData.899.value (
-  		<link rel="preconnect" href="https://cdnjs.cloudflare.com/" crossorigin>
-  		<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    )
-  }
 
 # Fluidtemplate setup
   page = PAGE
@@ -61,78 +59,80 @@ config {
   	typeNum = 0
   	10 = FLUIDTEMPLATE
   	10 {
-      partialRootPath = {$macrotemplate.partialRootPath}
-  		layoutRootPath = {$macrotemplate.layoutRootPath}
-  		templateRootPaths = {$macrotemplate.templateRootPaths}
+        partialRootPath = {$macrotemplate.partialRootPath}
+        layoutRootPath = {$macrotemplate.layoutRootPath}
+        templateRootPaths = {$macrotemplate.templateRootPaths}
 
-      dataProcessing {
-        10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
-        10 {
-          levels = 2
-          as = menuMain
-          expandAll = 1
-          includeSpacer = 0
-          titleField = nav_title // title
-        }
-        20 = TYPO3\CMS\Frontend\DataProcessing\LanguageMenuProcessor
-        20 {
-          languages = auto
-          as = languageNavigation
-        }
+        dataProcessing {
+            5 = TYPO3\CMS\Frontend\DataProcessing\SiteProcessor
+            5.as = site
 
-        30 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-        30.references.fieldName = media
-      }
-      settings {
-        logoFile = {$macrotemplate.logoFile}
-        rootPageId = {$macrotemplate.rootPageId}
-      }
-  		variables {
-        headerImage =< lib.headerImage
-        headerImagePosition =< lib.headerImagePosition
-  			content = COA
-  			content {
-  				#10 = LOAD_REGISTER
-  				#10.maxImageWidth = {$macrotemplate.pageWidth}
-  				20 < styles.content.get
-  				20.select.where = colPos = 0
-  				#30 = RESTORE_REGISTER
-  			}
-        header < .content
-    		header.20.select.where = colPos = 5
-    		footer < .content
-    		footer.20.select.where = colPos = 6
-    		footer.20.slide = -1
-  		}
-      file.stdWrap.cObject = CASE
-      file.stdWrap.cObject {
-        key.data = levelfield:-1, backend_layout_next_level, slide
-        key.override.field = backend_layout
-        default = TEXT
-        default.value = EXT:macrotemplate/Resources/Private/Templates/Home.html
-        pagets__home = TEXT
-        pagets__home.value = EXT:macrotemplate/Resources/Private/Templates/Home.html
-        pagets__sub = TEXT
-        pagets__sub.value = EXT:macrotemplate/Resources/Private/Templates/Sub.html
-        pagets__article = TEXT
-        pagets__article.value = EXT:macrotemplate/Resources/Private/Templates/Article.html
-      }
+            10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+            10 {
+                levels = 2
+                as = menuMain
+                expandAll = 1
+                includeSpacer = 0
+                titleField = nav_title // title
+            }
+
+            20 = TYPO3\CMS\Frontend\DataProcessing\LanguageMenuProcessor
+            20.languages = auto
+            20.as = languageNavigation
+
+            30 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+            30.references.fieldName = media
+        }
+        settings {
+            logoFile = {$macrotemplate.logoFile}
+            rootPageId = {$macrotemplate.rootPageId}
+        }
+        variables {
+            headerImage =< lib.headerImage
+            headerImagePosition =< lib.headerImagePosition
+            content = COA
+            content {
+                #10 = LOAD_REGISTER
+                #10.maxImageWidth = {$macrotemplate.pageWidth}
+                20 < styles.content.get
+                20.select.where = colPos = 0
+                #30 = RESTORE_REGISTER
+            }
+            header < .content
+            header.20.select.where = colPos = 5
+            footer < .content
+            footer.20.select.where = colPos = 6
+            footer.20.slide = -1
+        }
+        file.stdWrap.cObject = CASE
+        file.stdWrap.cObject {
+            key.data = levelfield:-1, backend_layout_next_level, slide
+            key.override.field = backend_layout
+            default = TEXT
+            default.value = EXT:macrotemplate/Resources/Private/Templates/Home.html
+            pagets__home = TEXT
+            pagets__home.value = EXT:macrotemplate/Resources/Private/Templates/Home.html
+            pagets__sub = TEXT
+            pagets__sub.value = EXT:macrotemplate/Resources/Private/Templates/Sub.html
+            pagets__article = TEXT
+            pagets__article.value = EXT:macrotemplate/Resources/Private/Templates/Article.html
+        }
     }
-  }
+}
 ["{$macrotemplate.personnelIsLoaded}" == "1"]
-  page.10.dataProcessing {
-    40 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
-    40 {
-      table = tx_personnel_domain_model_person
-      uidInList.field = tx_personnel_authors
-      pidInList = 0
-      as = authors
-      dataProcessing {
-        10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-        10.references.table = tx_personnel_domain_model_person
-        10.references.fieldName = images
-        10.as = authorimages
-      }
+    page.10.dataProcessing {
+        40 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+        40 {
+            table = tx_personnel_domain_model_person
+            uidInList.field = tx_personnel_authors
+            pidInList = 0
+            as = authors
+            dataProcessing {
+                10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+                10.references.table = tx_personnel_domain_model_person
+                10.references.fieldName = images
+                10.as = authorimages
+            }
+        }
     }
-  }
 [END]

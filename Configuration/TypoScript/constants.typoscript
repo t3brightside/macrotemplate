@@ -1,16 +1,20 @@
 # customsubcategory=macrotemplate=Macrotemplate setup
-# cat=Macrotemplate/macrotemplate; type=string; label= Home page ID (Has to be set if Home is a sub page)
-	macrotemplate.rootPageId = 1
 # cat=Macrotemplate/macrotemplate; type=string; label= Domain name with https(s) and ending /:Example: https://emaple.com/;
 	macrotemplate.domainName = /
 # cat=Macrotemplate/macrotemplate; type=int; label= Cache max age in seconds
 	macrotemplate.cacheControlMaxAge = 3600
 # cat=Macrotemplate/macrotemplate; type=string; label= jQuery version number
-	macrotemplate.jQueryVersion = 3.3.1
+	macrotemplate.jQueryVersion = 3.4.1
 
 # customsubcategory=macrotemplatestyles=Macrotemplate styles & design
 # cat=Macrotemplate/macrotemplatestyles; type=string; label=Logo file location: Or add file in home page settings 'Resources' -> 'Media'
 	macrotemplate.logoFile = typo3conf/ext/macrotemplate/Resources/Public/Images/brightside_logo.svg
+# cat=Macrotemplate/macrotemplatestyles; type=string; label=Google Fonts link
+	macrotemplate.google-font-link = https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:400,500
+# cat=Macrotemplate/macrotemplatestyles; type=string; label=Name of the header & menu font
+	macrotemplate.header-font-family = Fira Sans Extra Condensed
+# cat=Macrotemplate/macrotemplatestyles; type=string; label=Main font family
+	macrotemplate.main-font-family = sans-serif
 # cat=Macrotemplate/macrotemplatestyles; type=color; label= Default text color: Body, headers, main menu
 	macrotemplate.text-default = #111111
 # cat=Macrotemplate/macrotemplatestyles; type=color; label= Default background color
