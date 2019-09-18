@@ -1,296 +1,296 @@
 .hmbrgr {
-  display: none;
-  position: relative;
-  float: right;
-  box-sizing: border-box;
-  margin-right: -.6em;
-  transition: all .4s;
+    display: none;
+    position: relative;
+    float: right;
+    box-sizing: border-box;
+    margin-right: -.6em;
+    transition: all .4s;
 }
 
 .hmbrgr b {
-  position: relative;
-  display: block;
-  margin: .76em;
-  margin-top: .66em;
-  width: 2em;
-  height: 1.4em;
+    position: relative;
+    display: block;
+    margin: .76em;
+    margin-top: .66em;
+    width: 2em;
+    height: 1.4em;
 }
 
 .hmbrgr i {
-  display: block;
-  position: absolute;
-  background: #000;
-  width: 100%;
-  height: 2px;
+    display: block;
+    position: absolute;
+    background: #000;
+    width: 100%;
+    height: 2px;
 }
 
 .hmbrgr i.f {
-  top: 0;
+    top: 0;
 }
 
 .hmbrgr i.m {
-  top: 50%;
-  margin-top: -1px;
+    top: 50%;
+    margin-top: -1px;
 }
 
 .hmbrgr i.l {
-  bottom: 0;
+    bottom: 0;
 }
 
 .hmbrgr.open i.m {
-  opacity: 0;
+    opacity: 0;
 }
 
 .hmbrgr.open i.f, .hmbrgr.open i.l {
-  top: 50%;
-  margin-top: -1px;
+    top: 50%;
+    margin-top: -1px;
 }
 
 .hmbrgr.open i.f {
-  transform: rotate(135deg);
+    transform: rotate(135deg);
 }
 
 .hmbrgr.open i.l {
-  transform: rotate(-135deg);
+    transform: rotate(-135deg);
 }
 
 .hmbrgr b, .hmbrgr i {
-  transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 #menu * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 #menu {
-  font-weight: 500;
-  float: right;
-  margin: 0;
-  box-sizing: border-box;
+    font-weight: 500;
+    float: right;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 #menu>nav>ul {
-  padding: 0;
-  margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
 #menu>nav>ul>li {
-  display: inline-block;
-  list-style: none;
-  margin-left: 3.556em;
-  position: relative;
+    display: inline-block;
+    list-style: none;
+    margin-left: 3.556em;
+    position: relative;
 }
 
 #menu>nav>ul>li>a {
-  display: inline-block;
-  padding: .9em 0;
-  line-height: 1em;
-  transition: color .4s;
-  text-transform: uppercase;
+    display: inline-block;
+    padding: .9em 0;
+    line-height: 1em;
+    transition: color .4s;
+    text-transform: uppercase;
 }
 
 #menu>nav>ul>li>ul {
-  position: absolute;
-  padding-top: 1.18em;
-  top: 2.77em;
-  left: -1.5em;
-  z-index: 99;
-  height: 0;
-  transition: all .5s;
-  opacity: 0;
-  overflow: hidden;
-  transform: scaleY(0);
-  transform-origin: bottom;
+    position: absolute;
+    padding-top: 1.18em;
+    top: 2.77em;
+    left: -1.5em;
+    z-index: 99;
+    height: 0;
+    transition: all .5s;
+    opacity: 0;
+    overflow: hidden;
+    transform: scaleY(0);
+    transform-origin: bottom;
 }
 
 #menu>nav>ul>li:hover>ul, #menu>nav>ul>li:focus-within>ul {
-  opacity: 1;
-  height: auto;
-  transform: scaleY(1);
+    opacity: 1;
+    height: auto;
+    transform: scaleY(1);
 }
 
 #menu>nav>ul>li>ul>li {
-  width: auto;
-  float: left;
-  display: inline-block;
-  margin-bottom: 3px;
+    width: auto;
+    float: left;
+    display: inline-block;
+    margin-bottom: 3px;
 }
 
 #menu>nav>ul>li>ul>li>a {
-  display: inline-block;
-  background-color: #fff;
-  white-space: nowrap;
-  padding: 0.2em 0.6em;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14);
-  font-weight: 400;
-  margin-left: 4px;
-  margin-right: 4px;
+    display: inline-block;
+    background-color: #fff;
+    white-space: nowrap;
+    padding: 0.2em 0.6em;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.14);
+    font-weight: 400;
+    margin-left: 4px;
+    margin-right: 4px;
 }
 
 #menu a:hover, #menu .active a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 #menu .submenu-button {
-  display: none;
+    display: none;
 }
 
 @media screen and (min-width: 1100px) {
 
-  /* mobile menu breakpoint for jQuery is defined in menu TS file, if you change it here you have to change it in TS as well */
-  .scrolled #menu>nav>ul>li>ul {
-    top: 2em;
-  }
+    /* mobile menu breakpoint for jQuery is defined in menu TS file, if you change it here you have to change it in TS as well */
+    .scrolled #menu>nav>ul>li>ul {
+        top: 2em;
+    }
 
-  #header.scrolled #menu {
-    font-weight: 400;
-    letter-spacing: .1px;
-  }
+    #header.scrolled #menu {
+        font-weight: 400;
+        letter-spacing: .1px;
+    }
 }
 
 @media screen and (max-width: 1100px) {
-  #menu .submenu-button, .hmbrgr {
-    display: block;
-  }
+    #menu .submenu-button, .hmbrgr {
+        display: block;
+    }
 
-  #menu .submenu-button {
-    float: right;
-    display: block;
-    position: absolute;
-    right: 0;
-    padding: 0.57em;
-    border: 1.4em solid #fff;
-    margin-right: -0.64em;
-    transition: margin 0.5s;
-  }
+    #menu .submenu-button {
+        float: right;
+        display: block;
+        position: absolute;
+        right: 0;
+        padding: 0.57em;
+        border: 1.4em solid #fff;
+        margin-right: -0.64em;
+        transition: margin 0.5s;
+    }
 
-  .scrolled #menu .submenu-button {
-    margin-right: -1.24em;
-  }
+    .scrolled #menu .submenu-button {
+        margin-right: -1.24em;
+    }
 
-  #menu .submenu-button i {
-    display: block;
-    background: #333;
-    width: 100%;
-    height: 2px;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    margin-top: -1px;
-  }
+    #menu .submenu-button i {
+        display: block;
+        background: #333;
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        margin-top: -1px;
+    }
 
-  #menu .submenu-button i:last-child {
-    width: 2px;
-    height: 100%;
-    top: 0;
-    left: 50%;
-    margin-left: -1px;
-    transition: all 0.3s;
-  }
+    #menu .submenu-button i:last-child {
+        width: 2px;
+        height: 100%;
+        top: 0;
+        left: 50%;
+        margin-left: -1px;
+        transition: all 0.3s;
+    }
 
-  #menu.mobile {
-    max-height: 80vh;
-    overflow-y: auto;
-    overflow-x: hidden;
-  }
+    #menu.mobile {
+        max-height: 80vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
 
-  #menu .open .submenu-button i:last-child {
-    height: 0;
-    top: 50%;
-  }
+    #menu .open .submenu-button i:last-child {
+        height: 0;
+        top: 50%;
+    }
 
-  #menu .submenu-button:hover {
-    cursor: pointer;
-  }
+    #menu .submenu-button:hover {
+        cursor: pointer;
+    }
 
-  #menu.mobile {
-    position: relative;
-    width: 100%;
-  }
+    #menu.mobile {
+        position: relative;
+        width: 100%;
+    }
 
-  #header.scrolled .hmbrgr b {
-    margin: .94em;
-    height: 1.12em;
-    width: 1.7em;
-  }
+    #header.scrolled .hmbrgr b {
+        margin: .94em;
+        height: 1.12em;
+        width: 1.7em;
+    }
 
-  #header.scrolled .hmbrgr {
-    margin-right: -1em;
-    margin-top: -.26em;
-  }
+    #header.scrolled .hmbrgr {
+        margin-right: -1em;
+        margin-top: -.26em;
+    }
 
-  #menu {
-    display: none;
-    text-align: left;
-    width: 100%;
-    padding-bottom: 2em;
-    padding-top: 1em;
-  }
+    #menu {
+        display: none;
+        text-align: left;
+        width: 100%;
+        padding-bottom: 2em;
+        padding-top: 1em;
+    }
 
-  #menu>nav>ul {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    max-width: 100%;
-  }
+    #menu>nav>ul {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        max-width: 100%;
+    }
 
-  #menu>nav>ul>li {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    border-bottom: 1px solid #ccc;
-    padding-right: 3em;
-  }
+    #menu>nav>ul>li {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+        padding-right: 3em;
+    }
 
-  #menu>nav>ul>li>ul, #menu>nav>ul>li:hover>ul {
-    top: 0;
-    left: 0;
-    padding: 0;
-    margin: 0;
-    height: 0;
-    transition: all .5s;
-    transform: scaleY(0);
-    transform-origin: top;
-    display: inline-block;
-  }
+    #menu>nav>ul>li>ul, #menu>nav>ul>li:hover>ul {
+        top: 0;
+        left: 0;
+        padding: 0;
+        margin: 0;
+        height: 0;
+        transition: all .5s;
+        transform: scaleY(0);
+        transform-origin: top;
+        display: inline-block;
+    }
 
-  #menu>nav>ul>li.open>ul {
-    height: auto;
-    opacity: 1;
-    transform: scaleY(1);
-    position: relative;
-    width: 100%;
-    margin-bottom: 0.4em;
-    margin-top: -0.7em;
-  }
+    #menu>nav>ul>li.open>ul {
+        height: auto;
+        opacity: 1;
+        transform: scaleY(1);
+        position: relative;
+        width: 100%;
+        margin-bottom: 0.4em;
+        margin-top: -0.7em;
+    }
 
-  #menu>nav>ul>li>a {
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 1.5em;
-    padding-left: 0;
-  }
+    #menu>nav>ul>li>a {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 1.5em;
+        padding-left: 0;
+    }
 
-  #menu>nav>ul>li>ul>li {
-    display: block;
-    width: 100%;
-    position: relative;
-  }
+    #menu>nav>ul>li>ul>li {
+        display: block;
+        width: 100%;
+        position: relative;
+    }
 
-  #menu>nav>ul>li>ul>li>a {
-    box-shadow: none;
-    display: block;
-    width: 100%;
-  }
+    #menu>nav>ul>li>ul>li>a {
+        box-shadow: none;
+        display: block;
+        width: 100%;
+    }
 
-  #menu>nav>ul>li:last-child {
-    border-bottom: none
-  }
+    #menu>nav>ul>li:last-child {
+        border-bottom: none
+    }
 }
 
 @media screen and (max-width: 960px) {
-  .hmbrgr {
-    margin-right: -1em;
-  }
+    .hmbrgr {
+        margin-right: -1em;
+    }
 }

@@ -13,7 +13,8 @@ ul {
 }
 
 fieldset, img {
-    border: none;deo
+    border: none;
+    deo
 }
 
 caption, th {
@@ -376,9 +377,11 @@ tbody tr:last-child td, tbody tr:last-child th {
     background-color: transparent !important;
     overflow: hidden;
 }
+
 .ge-section.has-bg-video .contentWidth {
     z-index: 2;
 }
+
 .ge-section .bg-video {
     min-width: 100%;
     min-height: 100%;
@@ -442,6 +445,7 @@ tbody tr:last-child td, tbody tr:last-child th {
     top: auto;
     transform: none;
 }
+
 .ge-section.vcenter.fullheight .contentWidth {
     position: absolute;
     width: 100%;
@@ -900,9 +904,11 @@ form span.error:before {
         font-size: 2.6em;
         line-height: 1.2em;
     }
-     .ge-section.home h1, .ge-section.home p {
-         margin-left: 0px;
-     }
+
+    .ge-section.home h1, .ge-section.home p {
+        margin-left: 0px;
+    }
+
     input, select, textarea {
         width: 100%;
     }

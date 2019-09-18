@@ -1,56 +1,61 @@
 #menu-language {
-  float: left;
-  font-size: 0.8em;
-  margin-left: 3em;
-  margin-top: 0.68em;
-  position: relative;
+    float: left;
+    font-size: 0.8em;
+    margin-left: 3em;
+    margin-top: 0.68em;
+    position: relative;
 }
+
 #menu-language::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 6px 4px 0 4px;
-  border-color: #555 transparent transparent transparent;
-  z-index: 99;
-  top: 50%;
-  right: -1.1em;
-  margin-top: -3px;
-  -webkit-transform:rotate(360deg);
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 4px 0 4px;
+    border-color: #555 transparent transparent transparent;
+    z-index: 99;
+    top: 50%;
+    right: -1.1em;
+    margin-top: -3px;
+    -webkit-transform: rotate(360deg);
 }
+
 #menu-language ul {
-  list-style: none;
-  height: 0;
-  opacity: 0;
-  transition: all 0.4s;
-  position: absolute;
-  margin: 0;
-  padding-top: 1.5em;
-  top: 0;
-  left: -1.15em;
-  overflow: hidden;
+    list-style: none;
+    height: 0;
+    opacity: 0;
+    transition: all 0.4s;
+    position: absolute;
+    margin: 0;
+    padding-top: 1.5em;
+    top: 0;
+    left: -1.15em;
+    overflow: hidden;
 }
+
 #menu-language:hover ul, #menu-language:focus-within ul {
-  height: auto;
-  opacity: 1;
+    height: auto;
+    opacity: 1;
 }
+
 #menu-language li a, #menu-language li.text-muted {
-  background: #fff;
-  display: block;
-  line-height: 1em;
-  padding: 0.5em 1em;
+    background: #fff;
+    display: block;
+    line-height: 1em;
+    padding: 0.5em 1em;
 }
+
 #menu-language li.text-muted {
-  color: #999;
+    color: #999;
 }
 
 #menu-language svg {
-  width: 1.12em;
-  height: 1.12em;
-  display: block;
+    width: 1.12em;
+    height: 1.12em;
+    display: block;
 }
 
 #menu-language li a, #menu-language li a:visited {
-  color: #333;
+    color: #333;
 }
