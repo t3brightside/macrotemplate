@@ -90,17 +90,17 @@ $(document).ready(function() {
     });
 });
 var position = $(window).scrollTop();
-var position = position + 245;
 jQuery(window).scroll(function() {
     var scroll = jQuery(window).scrollTop();
-    if (scroll > position) {
+    if ((scroll > position) && (scroll > 245)) {
         if( $("#header").css('display') == 'none')
         {
             $("#header").fadeToggle();
             $("#unmute").next().next().fadeToggle();
             $("#unmute").next().prop('muted', true);
         }
-        else { }
-        position = scroll;
+
     }
+    else { }
+    position = scroll;
 });
