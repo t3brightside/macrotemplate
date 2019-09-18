@@ -1,5 +1,4 @@
 config {
-    typolinkEnableLinksAcrossDomains = 1
     cache_period = {$macrotemplate.cacheControlMaxAge}
     sendCacheHeaders=1
     absRefPrefix = {$macrotemplate.domainName}
@@ -18,7 +17,7 @@ config {
         renderObj {
             15 = IMG_RESOURCE
             15 {
-                file.import.data = file:current:publicUrl
+                file.import.data = file:current:uid
                 file.treatIdAsReference = 1
                 file.crop.data = file:current:crop
                 file.width = {$macrotemplate.subPageImafeWidth}
