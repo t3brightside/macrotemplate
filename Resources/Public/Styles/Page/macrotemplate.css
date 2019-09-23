@@ -245,6 +245,8 @@ tbody tr:last-child td, tbody tr:last-child th {
     margin: auto;
     clear: both;
     padding: 0 3em;
+    position: relative;
+    z-index: 1;
 }
 
 /* end */
@@ -377,8 +379,42 @@ tbody tr:last-child td, tbody tr:last-child th {
     overflow: hidden;
 }
 
-.ge-section.has-bg-video .contentWidth {
-    z-index: 2;
+.ge-section .videobuttons  {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0.6em;
+    font-size: 0.6em;
+    line-height: 1em;
+    position: absolute;
+    bottom: 4em;
+    right: 4em;
+    z-index: 3;
+    width: auto;
+}
+.ge-section .sound.hasclearframebutton {
+    right: 7.5em;
+}
+.ge-section .videobuttons svg {
+    height: 1.5em;
+    width: auto;
+}
+.ge-section .sound .on, .ge-section .clearframe .on {
+display: none;
+}
+.ge-section .sound .off, .ge-section .clearframe .off {
+    display: block;
+}
+.ge-section .sound.active .on, .ge-section .clearframe.active .on {display: block}
+.ge-section .sound.active .off, .ge-section .clearframe.active .off {display: none}
+
+.ge-section .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
 }
 
 .ge-section .bg-video {
@@ -392,17 +428,7 @@ tbody tr:last-child td, tbody tr:last-child th {
     transform: translate(-50%, -50%);
     z-index: 1;
 }
-#unmute {
-    position: absolute;
-    right: 5em;
-    bottom: 5em;
-    z-index: 3;
-    background: rgba(255, 255, 255, 0.2);
-    text-transform: uppercase;
-    padding: 0.5em;
-    color: #fff;
-    line-height: 1em;
-}
+
 .ge-section.bg1 .bg-video {
     left: 0;
     top: 50%;

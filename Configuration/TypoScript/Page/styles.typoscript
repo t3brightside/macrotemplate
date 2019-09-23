@@ -14,9 +14,9 @@ page {
 		menu_main = EXT:macrotemplate/Resources/Public/Styles/Page/menu_main.css
 		menu_main.inline = 1
     	menu_main.media = all
-		menu_language = EXT:macrotemplate/Resources/Public/Styles/Page/menu_language.css
-		menu_language.inline = 1
-    	menu_language.media = all
+		languagemenu = EXT:macrotemplate/Resources/Public/Styles/Page/languagemenu.css
+		languagemenu.inline = 1
+    	languagemenu.media = all
 		googleFonts = {$macrotemplate.google-font-link}
 		googleFonts.external = 1
 		googleFonts.media = all
@@ -29,10 +29,12 @@ page {
 				body, input, select, textarea, button {font-family: {$macrotemplate.main-font-family}}
 				h1,h2,h3,h4,.ce-bodytext .headerFont,  .form-group>label, .control-label, #menu, .pagelist.list .event .dates {font-family: {$macrotemplate.header-font-family}, {$macrotemplate.main-font-family}}
 
-				.header-bg {background: {$macrotemplate.header-bg}}
+				.header-bg, #languagemenu ul li {background: {$macrotemplate.header-bg}}
 				.pageWidth {max-width: {$macrotemplate.pageWidth}}
 				.contentWidth {max-width: {$macrotemplate.contentWidth}}
-				#menu a {color: {$macrotemplate.text-default}}
+				#menu a, #languagemenu li a {color: {$macrotemplate.text-default}}
+				#languagemenu::after {border-color: {$macrotemplate.text-default} transparent transparent transparent;}
+
 				.hmbrgr i {background: {$macrotemplate.text-default}}
 				.subpageContentWidth {max-width: {$macrotemplate.subpageContentWidth}}
 				a, a:visited, #menu a:hover, #menu a.act {color: {$macrotemplate.accentColor}}
@@ -52,6 +54,9 @@ page {
 				.ge-accordion-section-title:hover::after, .ge-accordion-section-title:hover::before {background-color: {$macrotemplate.accentColor}}
 
 				.subpage {color: {$macrotemplate.text-dark}}
+
+				.videobuttons svg .a, .videobuttons svg .st0, .videobuttons svg rect {fill:{$microtemplate.text-default} !important}
+				#languagemenu svg .a, #languagemenu svg .b {stroke: {$macrotemplate.text-default};}
 			</style>
 		)
 	}
