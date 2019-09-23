@@ -2,7 +2,7 @@
   "name": "t3brightside/macrotemplate",
   "description": "TYPO3 CMS template package.",
   "type": "typo3-cms-extension",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "keywords": ["TYPO3 CMS", "Template", "Design", "Fluid", "Corporate"],
   "homepage": "https://macrotemplate.t3brightside.com/",
   "license": "GPL-2.0+",
