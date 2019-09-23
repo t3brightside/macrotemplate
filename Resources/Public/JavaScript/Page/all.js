@@ -26,7 +26,7 @@ jQuery(window).scroll(function() {
     // play background videos only if in viewport
     $('.bg-video').each(function() {
         var top_of_element = $(this).offset().top;
-        var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+        var bottom_of_element = $(this).offset().top + $(this).parent().outerHeight();
         var bottom_of_screen = $(window).scrollTop() + window.innerHeight;
         var top_of_screen = $(window).scrollTop();
         if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)) {
@@ -45,13 +45,12 @@ jQuery(window).scroll(function() {
     });
     $('.ge-section').each(function() {
         var top_of_element = $(this).offset().top;
-        var bottom_of_element = $(this).offset().top + $(this).height();
+        var bottom_of_element = $(this).offset().top + $(this).outerHeight();
         var bottom_of_screen = $(window).scrollTop() + window.innerHeight;
         var top_of_screen = $(window).scrollTop();
         if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)) {
 
         } else {
-            /* bring back hidden menu and content if out of viewport */
             if ($(this).hasClass('active')) {
                 $('#header').fadeToggle();
                 $(this).children('.contentWidth, .overlay').fadeToggle();
