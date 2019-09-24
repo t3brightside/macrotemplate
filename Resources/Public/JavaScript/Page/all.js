@@ -84,29 +84,6 @@ jQuery(window).scroll(function() {
             return false;
         }
     }
-
-    // html5 based validation class
-    $("form .btn").click(function() {
-        $("select, input, textarea").each(function() {
-            if ($(this).is(":invalid")) {
-                $(this).addClass("error")
-            }
-        })
-    });
-    $('select, input, textarea').on('blur', function() {
-        if (!$(this).val()) {} else {
-            if ($(this).is(":invalid")) {
-                $(this).addClass("error")
-            }
-            if ($(this).is(":valid") && $(this).hasClass('error')) {
-                $(this).removeClass("error");
-                $(this).addClass("valid");
-            }
-            if ($(this).is(":valid")) {
-                $(this).addClass("valid");
-            }
-        }
-    });
 });
 
 // hide header and content if sound button is clicked

@@ -14,5 +14,8 @@ page.includeJSLibs.jQuery {
 }
 
 # applied to all pages
-page.includeJSFooterlibs.all = EXT:macrotemplate/Resources/Public/JavaScript/Page/all.js
-page.includeJSFooterlibs.menu_main = EXT:macrotemplate/Resources/Public/JavaScript/Page/menu_main.js
+page.includeJSFooterlibs {
+	all = EXT:macrotemplate/Resources/Public/JavaScript/Page/all.js
+	menu_main = EXT:macrotemplate/Resources/Public/JavaScript/Page/menu_main.js
+	forms = EXT:macrotemplate/Resources/Public/JavaScript/Page/forms.js
+}
