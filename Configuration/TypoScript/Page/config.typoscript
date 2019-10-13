@@ -20,8 +20,8 @@ config {
                 file.import.data = file:current:uid
                 file.treatIdAsReference = 1
                 file.crop.data = file:current:crop
-                file.width = {$macrotemplate.subPageImafeWidth}
-                file.height = {$macrotemplate.subPageImafeHeight}
+                file.width = {$macrotemplate.subPageImageWidth}
+                file.height = {$macrotemplate.subPageImageHeight}
             }
         }
     }
