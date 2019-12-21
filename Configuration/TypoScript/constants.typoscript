@@ -8,7 +8,7 @@
 
 # customsubcategory=macrotemplatestyles=Macrotemplate styles & design
 # cat=Macrotemplate/macrotemplatestyles; type=string; label=Logo file location: Or add file in home page settings 'Resources' -> 'Media'
-	macrotemplate.logoFile = typo3conf/ext/macrotemplate/Resources/Public/Images/brightside_logo.svg
+	macrotemplate.logoFile = typo3conf/ext/macrotemplate/Resources/Public/Images/logo.svg
 # cat=Macrotemplate/macrotemplatestyles; type=string; label=Google Fonts link
 	macrotemplate.google-font-link = https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:400,500
 # cat=Macrotemplate/macrotemplatestyles; type=string; label=Name of the header & menu font

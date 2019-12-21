@@ -6,7 +6,7 @@
 				<div class="pageWidth">
 					<div class="contentWidth">
 						<f:render partial="Logo" arguments="{_all}" />
-						<f:if condition="{site.languages -> f:count()} > 1 && {languageNavigation}"><f:render partial="LanguageMenu" arguments="{_all}" /></f:if>
+						<f:if condition="{site.languages -> f:count()} > 1 && {languageNavigation}"><f:render partial="MenuLanguage" arguments="{_all}" /></f:if>
 						<f:render partial="MenuMain" arguments="{_all}" />
 					</div>
 				</div>

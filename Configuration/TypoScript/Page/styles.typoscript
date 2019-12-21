@@ -7,14 +7,14 @@ config {
 
 page {
 	includeCSS {
-		macrotemplate = EXT:macrotemplate/Resources/Public/Styles/Page/macrotemplate.css
-		macrotemplate.inline = 1
-	    macrotemplate.forceOnTop = 1
-	    macrotemplate.media = all
+		default = EXT:macrotemplate/Resources/Public/Styles/Page/default.css
+		default.inline = 1
+	    default.forceOnTop = 1
+	    default.media = all
 		menu_main = EXT:macrotemplate/Resources/Public/Styles/Page/menu_main.css
 		menu_main.inline = 1
     	menu_main.media = all
-		languagemenu = EXT:macrotemplate/Resources/Public/Styles/Page/languagemenu.css
+		languagemenu = EXT:macrotemplate/Resources/Public/Styles/Page/menu_language.css
 		languagemenu.inline = 1
     	languagemenu.media = all
 		googleFonts = {$macrotemplate.google-font-link}
