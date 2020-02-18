@@ -89,6 +89,23 @@ $tca = [
 		],
 	],
 ];
+
+$GLOBALS['TCA']['pages']['columns']['tx_macrotemplate_headerimage']['config'] ['overrideChildTca']['columns']['crop'] = [
+    'config' => [
+        'cropVariants' => [
+            'header' => [
+                'title' => 'Page Header',
+                'selectedRatio' => '1800:700',
+                'allowedAspectRatios' => [
+                    '1800:700' => [
+                        'title' => 'Panorama',
+                        'value' => 1800 / 700,
+                    ],
+                ],
+            ],
+        ],
+    ],
+];
 $GLOBALS['TCA']['pages'] = array_replace_recursive($GLOBALS['TCA']['pages'], $tca);
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
 	'pages',
