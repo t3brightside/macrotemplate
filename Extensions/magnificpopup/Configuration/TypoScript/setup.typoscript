@@ -18,8 +18,8 @@ page {
       		},
       		type: 'image'
       	});
-			});
-			$('.personnel td').each(function() {
+	  });
+	  $('.gallerycontent').each(function() {
       	$(this).magnificPopup({
       		delegate: 'a.lightbox', // child items selector, by clicking on it popup will open
       		gallery: {
@@ -27,7 +27,16 @@ page {
       		},
       		type: 'image'
       	});
-			});
+	  });
+	  $('.personnel td').each(function() {
+      	$(this).magnificPopup({
+      		delegate: 'a.lightbox', // child items selector, by clicking on it popup will open
+      		gallery: {
+      			enabled: true
+      		},
+      		type: 'image'
+      	});
+	   });
     )
 	}
 }

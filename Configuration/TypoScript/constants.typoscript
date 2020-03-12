@@ -36,7 +36,7 @@
 # cat=Macrotemplate/macrotemplatestyles; type=string; label= Maximum home page width (px, em or %)
 	macrotemplate.pageWidth = 100%
 # cat=Macrotemplate/macrotemplatestyles; type=string; label= Maximum home page content width (px, em or %)
-	macrotemplate.contentWidth = 1240px
+	macrotemplate.contentWidth = 1440px
 # cat=Macrotemplate/macrotemplatestyles; type=string; label= Maximum sub page content width (px, em or %)
 	macrotemplate.subpageContentWidth = 860px
 # cat=Macrotemplate/macrotemplatestyles; type=int; label= Content section background image width (px)
