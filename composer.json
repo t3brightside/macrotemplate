@@ -26,7 +26,7 @@
     "t3brightside/personnel": "Contact lists with vCard support",
     "t3brightside/youtubevideo": "Responsive YouTube videos with cover image",
     "t3brightside/gallerycontent": "Gallery with preset crop ratios",
-    "t3brightside/awesomeicons": "Font awesome tab for content and pages",
+    "t3brightside/awesomeicons": "Font awesome tab for content and pages"
   },
   "replace": {
     "macrotemplate": "self.version",
