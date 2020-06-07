@@ -10,7 +10,7 @@
 
 ## System requirements
 
-- TYPO3 9.5 LTS
+- TYPO3 10 LTS
 - fluid_styled_content
 - gridelements
 
@@ -47,12 +47,14 @@ It's a plug & play template that works out of the box.
 
 ## Recommended
 These extensions are preconfigured and tested in Macrotemplate package.
-- [personnel](https://extensions.typo3.org/extension/personnel/)
- – Contact persons information with vCard support
+- [personnel](https://extensions.typo3.org/extension/personnel/) – Contact persons information with vCard support
 - [pagelist](https://extensions.typo3.org/extension/pagelist/) – Page teasers, article lists etc
+- [gallerycontent](https://extensions.typo3.org/extension/gallerycontent/) – Gallery item with preset crop ratios
+- [awesomeicons](https://extensions.typo3.org/extension/awesomeicons/) – Font Awesome icon tab for content and pages
 - [youtubevideo](https://extensions.typo3.org/extension/youtubevideo/) – YouTube videos with cover images and cover text
 - [advancedtitle](https://extensions.typo3.org/extension/advancedtitle/) – Page title prefix & suffix
 - [favicon](https://extensions.typo3.org/extension/favicon/) – Favicon in page meta data
+
 ## Sources
 
 - [GitHub](https://github.com/t3brightside/macrotemplate)
