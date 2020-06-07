@@ -29,7 +29,7 @@
     "t3brightside/awesomeicons": "Font awesome tab for content and pages"
   },
   "replace": {
-    "macrotemplate": "self.version",
+    "t3brightside/macrotemplate": "self.version",
     "typo3-ter/macrotemplate": "self.version"
   }
 }
