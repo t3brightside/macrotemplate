@@ -1,5 +1,5 @@
 # Macrotemplate
-[![Packagist](https://img.shields.io/packagist/v/t3brightside/pagelist.svg?style=flat)](https://packagist.org/packages/t3brightside/macrotemplate)
+[![Packagist](https://img.shields.io/packagist/v/t3brightside/macrotemplate.svg?style=flat)](https://packagist.org/packages/t3brightside/macrotemplate)
 [![Software License](https://img.shields.io/badge/license-GPLv2-brightgreen.svg?style=flat)](LICENSE)
 [![Brightside](https://img.shields.io/badge/by-t3brightside.com-orange.svg?style=flat)](https://t3brightside.com)
 
