@@ -7,10 +7,15 @@ imports:
 # Add configuration for the editor
 # For complete documentation see http://docs.ckeditor.com/#!/api/CKEDITOR.config
 editor:
+  externalPlugins:
+    awesomeicons:
+      resource: "EXT:awesomeicons/Resources/Public/JavaScript/Plugins/awesomeicons/plugin.js"
+      route: "awesomeicons"
   config:
     contentsCss:
       - "EXT:rte_ckeditor/Resources/Public/Css/contents.css"
       - "EXT:macrotemplate/Resources/Public/Styles/rte.css"
+      - "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
     stylesSet:
       # Inline styles
       - { name: "Button", element: "a", attributes: { class: "btn"} }
@@ -26,7 +31,7 @@ editor:
       - { name: paragraph, groups: [ list, blocks, align ] }
       - { name: links, groups: [ links ] }
       - { name: editing, groups: [ spellchecker ] }
-      - { name: insert, groups: [ insert ] }
+      - { name: insert, groups: [ insert, awesomeicons ] }
       - { name: tools, groups: [ table, specialchar, cleanup ] }
       - { name: document, groups: [ mode ] }
 
@@ -37,6 +42,7 @@ editor:
 
     extraPlugins:
       - justify
+      - awesomeicons
 
     removePlugins:
       - image
@@ -53,3 +59,4 @@ processing:
   allowTags:
     - s
     - u
+    - i

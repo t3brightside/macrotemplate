@@ -2,7 +2,7 @@
   "name": "t3brightside/macrotemplate",
   "description": "TYPO3 CMS template package.",
   "type": "typo3-cms-extension",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "keywords": ["TYPO3 CMS", "Template", "Design", "Fluid", "Corporate"],
   "homepage": "https://macrotemplate.t3brightside.com/",
   "license": "GPL-2.0+",
@@ -15,14 +15,18 @@
       }
   ],
   "require": {
-    "typo3/cms-core": "^9.5",
-    "typo3/cms-fluid-styled-content": "^9.5",
-    "gridelementsteam/gridelements": "^9.1"
+    "typo3/cms-core": "^10.4",
+    "typo3/cms-fluid-styled-content": "^10.4",
+    "gridelementsteam/gridelements": "^10.0"
   },
   "suggest": {
-	"t3brightside/pagelist": "Page teasers, articles, events, products etc",
+    "t3brightside/advancedtitle": "Page title prefix & suffix",
+    "t3brightside/favicon": "Favicon control in page settings",
+  	"t3brightside/pagelist": "Page teasers, articles, events, products",
     "t3brightside/personnel": "Contact lists with vCard support",
-    "t3brightside/youtubevideo": "Responsive YouTube videos with cover image"
+    "t3brightside/youtubevideo": "Responsive YouTube videos with cover image",
+    "t3brightside/gallerycontent": "Gallery with preset crop ratios",
+    "t3brightside/awesomeicons": "Font awesome tab for content and pages",
   },
   "replace": {
     "macrotemplate": "self.version",

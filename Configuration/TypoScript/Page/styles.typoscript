@@ -45,7 +45,8 @@ page {
 				.ge-section {background-color: {$macrotemplate.ge-section.bg-default}}
 				.ge-section.bg-light {background-color: {$macrotemplate.ge-section.bg-light}}
 				.ge-section.bg-dark {background-color: {$macrotemplate.ge-section.bg-dark}; color: {$macrotemplate.text-light}}
-				.ge-section.text-light {color: {$macrotemplate.text-light}}
+				.ge-section.text-light, .ge-section.text-light .btn.light {color: {$macrotemplate.text-light}; border-color: #fff; background: transparent;}
+				.ge-section.text-light .btn {color: {$macrotemplate.text-default}; background: {$macrotemplate.text-light}; border-color: {$macrotemplate.text-light};}
 				.ge-section.text-dark {color: {$macrotemplate.text-dark}}
 
 				a.ge-accordion-section-title, a.ge-accordion-section-title:visited {color: {$macrotemplate.text-default}}
