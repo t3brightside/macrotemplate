@@ -53,7 +53,6 @@ p, ul, ol, table, form {
 }
 
 h2, h3, h4, p, ul, ol, blockquote {
-    max-width: 44em
 }
 
 h1, h2, h3, h4 {
@@ -534,13 +533,10 @@ display: none;
 }
 
 .ge-section p, .ge-section ol, .ge-section ul {
-    max-width: 41em;
 }
 
 /* custom section classes */
 .ge-section.home h1, .ge-section.home p {
-    display: inline-block;
-    background: #fff;
     padding: 10px 20px;
     margin-left: -20px;
 }
