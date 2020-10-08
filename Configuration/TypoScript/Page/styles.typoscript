@@ -8,8 +8,10 @@ config {
 page {
 	includeCSS {
 		default = EXT:macrotemplate/Resources/Public/Styles/Page/default.css
-		default.inline = 1
+		default.inline = 0
 	    default.forceOnTop = 1
+		default.excludeFromConcatenation = 1
+		default.disableCompression = 1
 	    default.media = all
 		menu_main = EXT:macrotemplate/Resources/Public/Styles/Page/menu_main.css
 		menu_main.inline = 1
