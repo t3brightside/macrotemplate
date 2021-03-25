@@ -5,9 +5,9 @@
     'category' => 'templates',
     'constraints' => [
       'depends' => [
-        'typo3' => '10.4.0 - 10.4.99',
-        'fluid_styled_content' => '10.4.0 - 10.4.99',
-        'gridelements' => '10.0.0-10.0.99',
+        'typo3' => '10.4.0 - 11.5.99',
+        'fluid_styled_content' => '10.4.0 - 11.5.99',
+        'gridelements' => '10.0.0-11.5.99',
       ],
       'conflicts' => [
       ],
@@ -19,5 +19,5 @@
     'author' => 'Tanel Põld',
     'author_email' => 'tanel@brightside.ee',
     'author_company' => 'Brightside OÜ',
-    'version' => '0.0.5',
+    'version' => '0.0.6',
   ];

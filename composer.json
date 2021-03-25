@@ -2,7 +2,7 @@
   "name": "t3brightside/macrotemplate",
   "description": "TYPO3 CMS template package.",
   "type": "typo3-cms-extension",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "keywords": ["TYPO3 CMS", "Template", "Design", "Fluid", "Corporate"],
   "homepage": "https://macrotemplate.t3brightside.com/",
   "license": "GPL-2.0+",
@@ -15,9 +15,9 @@
       }
   ],
   "require": {
-    "typo3/cms-core": "^10.4",
-    "typo3/cms-fluid-styled-content": "^10.4",
-    "gridelementsteam/gridelements": "^10.0"
+    "typo3/cms-core": "^10.4 || ^11",
+    "typo3/cms-fluid-styled-content": "^10.4 || ^11",
+    "gridelementsteam/gridelements": "^10.0 || ^11"
   },
   "suggest": {
     "t3brightside/advancedtitle": "Page title prefix & suffix",
