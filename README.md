@@ -63,4 +63,4 @@ These extensions are preconfigured and tested in Macrotemplate package.
 
 ## Development and maintenance
 
-[Brightside OÜ](https://t3brightside.com/) – TYPO3 development and hosting specialised web agency
+[Brightside OÜ – TYPO3 development and hosting specialised web agency](https://t3brightside.com/)
